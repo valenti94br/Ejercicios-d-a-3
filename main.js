@@ -13,37 +13,38 @@ console.log(resta(14, 7))
 // 7 - 8: Notable.
 // 9 - 10: Sobresaliente.
 
-// function nota() {
-//     let pregunta = prompt("¿Cual es mi calificación?")
-//     switch (+pregunta) {
-//         case 0:
-//         case 1:
-//         case 2:
-//         case 3:
-//         case 4:
-//             resultado = "Insuficiente";
-//             break;
-//         case 5:
-//         case 6:
-//             resultado = "Suficiente";
-//             break;
-//         case 7:
-//         case 8:
-//             resultado = "Notable";
-//             break;
-//         case 9:
-//         case 10:
-//             resultado = "Sobresaliente";
-//             break;
+function nota() {
+    let pregunta = prompt("¿Cual es mi calificación?")
+    switch (+pregunta) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            resultado = "Insuficiente";
+            break;
+        case 5:
+        case 6:
+            resultado = "Suficiente";
+            break;
+        case 7:
+        case 8:
+            resultado = "Notable";
+            break;
+        case 9:
+        case 10:
+            resultado = "Sobresaliente";
+            break;
 
-//         default: "Debe introducir una nota"
-//             break;
-//     }
-//     return resultado
-// }
-// console.log(nota())
+        default: "Debe introducir una nota"
+            break;
+    }
+    return resultado
+}
+console.log(nota())
 
-// copia
+// Este es el método que me enseñó Paco, es lo mismo pero agrupa por rangos para poder trabajar con un volumen de datos mayor
+
 function nota() {
     let pregunta = prompt("¿Cual es mi calificación?")
     let preguntaInt = parseInt(pregunta)
@@ -112,3 +113,4 @@ function ultimoCaracter(string) {
 }
 
 console.log(ultimoCaracter("Hola"))
+
